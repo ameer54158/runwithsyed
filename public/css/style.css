@@ -1,0 +1,881 @@
+@import "https://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin";
+
+body {
+    font-family: 'Ubuntu';
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* stylelint-disable selector-list-comma-newline-after */
+/* header */
+.blog-header {
+    line-height: 1;
+}
+
+h1, h2, h3, h4, h5, h6, p, div {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.display-4 {
+    font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+    .display-4 {
+        font-size: 3rem;
+    }
+}
+
+.header-container {
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #e5e5e5;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    /* height: 2.75rem; */
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.login-text {
+    padding-left: 10px;
+}
+
+.log-btn, .icon {
+    color: #4f7f55;
+    font-size: 22px;
+}
+
+.nav-link {
+    padding-top: unset !important;
+    padding-bottom: unset !important;
+}
+
+.card-img-right {
+    height: 100%;
+    border-radius: 0 3px 3px 0;
+}
+
+.flex-auto {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+
+.blog-header-logo img {
+    padding-top: 10px;
+    width: 80%;
+}
+
+.lang-norsk, .lang-norsk:hover {
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border: 1px solid #4f7f55;
+    color: gray;
+}
+
+.lang-norsk, .lang-norsk:focus {
+    box-shadow: none;
+}
+
+.lang_en {
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: 1px solid #4f7f55;
+    border-left: 0;
+    margin-left: -4px;
+    color: gray;
+}
+.active_lang{
+    background: #4f7f55 !important;
+    color: #fff !important;
+}
+
+.h-250 {
+    height: 250px;
+}
+
+@media (min-width: 768px) {
+    .h-md-250 {
+        height: 250px;
+    }
+}
+
+@media (min-width: 40em) {
+    .blog-title {
+        font-size: 3.5rem;
+    }
+}
+
+#navbarNavAltMarkup {
+    justify-content: center;
+}
+
+#navbarNavAltMarkup a {
+    color: #000000;
+    font-size: 19px;
+    margin: 0 0.9rem;
+    /*padding-right: .9rem;*/
+    /*padding-left: .9rem;*/
+}
+
+.active {
+    border: 1px solid #4f7f55;
+    border-radius: 100px;
+    color: white !important;
+    background: #4f7f55;
+}
+
+.blog-header .select-lan-label {
+    font-size: 19px;
+}
+
+/*
+ * Footer
+ */
+.blog-footer {
+    padding: 2.5rem 0;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: .05rem solid #e5e5e5;
+}
+
+.blog-footer p:last-child {
+    margin-bottom: 0;
+}
+/* End header */
+
+/* home page */
+.home-page .first-section {
+    position: relative;
+    height: 900px
+}
+
+.top-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.top-left {
+    position: absolute;
+    top: 22%;
+    text-align: left;
+}
+
+.centered {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 100%;
+    color: black;
+}
+
+.top-banner .banner-title {
+    color: white;
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.top-banner .banner-description {
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+.top-banner .register-button {
+    border: 2px solid white;
+    color: white;
+    border-radius: 29px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 6px 17px;
+}
+
+section.user-section .ambassador-section, section.user-section .sponsor-section, section.user-section .contribute-section {
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 0 5px 1px #e5e5e5;
+    text-align: center;
+    min-height: 240px;
+}
+
+section.user-section img {
+    border-radius: 15px 15px 0 0;
+}
+
+section.user-section .title {
+    color: #4f7f55;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 22px 0 2px 0;
+}
+
+section.user-section .description {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 20px;
+    line-height: 18px;
+    height: 108px;
+}
+.reset-password-page .col-md-7:nth-child(1){
+    margin-top: 25px !important;
+}
+.reset-password-page .btn{
+    color: #4f7f55;
+    border: 1px solid #4f7f55;
+    border-radius: 34px;
+    padding: 5px 25px;
+}
+section.user-section .btn {
+    color: #4f7f55;
+    border: 1px solid #4f7f55;
+    border-radius: 34px;
+    font-weight: 600;
+    padding: 5px 20px;
+    margin-bottom: 30px;
+}
+a:hover{
+    text-decoration: none;
+}
+section.user-section .btn:focus, section.user-section .btn:hover, section .news-section .btn:focus, section .news-section .btn:hover,
+ .list-news-page .btn:focus, .list-news-page .btn:hover,.single-news-page .btn:focus, .single-news-page .btn:hover,
+.single-news-page .related-news-section .single-news .btn:hover, .single-news-page .related-news-section .single-news .btn:focus,
+#registerambassadormodal .btn:focus, #registersponsormodal .btn:focus,#donationmodal .btn:focus, .home-page .contact-us .btn:hover, .login-page .login-form .btn:focus,
+.reset-password-page .btn:focus, .reset-password-page .btn:hover, .engage-yourself-page .contact-us .btn:hover, .contact-page .btn:hover,
+.our-ambassadors-page .btn:hover, .our-ambassadors-page .btn:focus, .ambassador-runs-history-page .btn:hover, .ambassador-runs-history-page .btn:focus
+, .show-more-button:focus, .show-more-button:hover
+{
+    background: #4f7f55 !important;
+    color: white !important;
+    box-shadow: none;
+}
+.lang-section .lang-norsk:focus, .lang-section .lang_en:focus{
+    box-shadow: none;
+}
+
+section .news-section {
+    padding: 45px 0 36px 0;
+}
+
+section .news-section .heading-title{
+    text-align: center;
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+section .news-section .single-news, .list-news-page .single-news, .single-news-page .related-news-section .single-news{
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 0 5px 1px #e5e5e5;
+    text-align: center;
+    background: white;
+}
+
+section .news-section img, .list-news-page img, .related-news-section img{
+    border-radius: 15px 15px 0 0;
+}
+
+section .news-section .title, .list-news-page .title, .single-news-page .related-news-section .single-news .title{
+    color: #4f7f55;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 0 2px 0;
+}
+
+section .news-section .description, .list-news-page .description, .single-news-page .description, .single-news-page .related-news-section .single-news .description {
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 20px;
+    line-height: 18px;
+}
+
+section .news-section .date, .list-news-page .date, .single-news-page .related-news-section .single-news .date{
+    font-size: 18px;
+    margin-bottom: 6px !important;
+    color: #9c9c9c;
+}
+
+section .news-section .btn, .contact-us form .btn, .list-news-page .btn, .single-news-page .btn, .single-news-page .related-news-section .single-news .btn
+, .contact-page .btn, .ambassador-runs-history-page .btn, .show-more-button
+{
+    color: #4f7f55 !important;
+    border: 1px solid #4f7f55;
+    border-radius: 34px;
+    font-weight: 600;
+    width: 120px;
+    margin-bottom: 30px;
+}
+
+.see-more-news-button {
+    color: #4f7f55;
+    border: 1px solid #4f7f55;
+    border-radius: 34px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    width: 18% !important;
+}
+
+.contact-us{
+    border-radius: 15px;
+    box-shadow: 0 0 5px 1px #e5e5e5;
+    padding: 20px;
+    height: 435px;
+}
+.instagram-feed-section {
+    border-radius: 15px;
+    box-shadow: 0 0 5px 1px #e5e5e5;
+    padding: 20px;
+    height: 435px;
+    max-height: 435px;
+    overflow-y: auto;
+}
+.instagram-feed-section .container-section .img-section:hover + .instagram-feed-section .centered {
+    display: block;
+    color: green;
+    font-size: 25px;
+}
+.instagram-feed-section .container-section .img-section{
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    height: 134px;
+
+}
+.instagram-feed-section .container-section .img-section img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.instagram-feed-section .container-section {
+    position: relative;
+}
+.instagram-feed-section .centered {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    width: 70%;
+    line-height: 16px;
+    color: #2d2d2d;
+    background: #f7f7f7;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+.instagram-feed-section .centered .date{
+    font-size: 12px;
+    border-bottom: 1px solid #c1c1c1;
+    padding-bottom: 2px;
+    margin-bottom: 4px;
+}
+.instagram-feed-section .centered .caption{
+    font-size: 12px;
+}
+.contact-us .heading {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #4f7f55;
+}
+
+
+.contact-us form .form-control, .login-page .login-form .form-control, #registerambassadormodal .form-control, #registersponsormodal .form-control
+, #donationmodal .form-control, .update-ambassador-runs-form .form-control, .pay-amount-form .form-control{
+    border: none !important;
+    border-bottom: 1px solid rgba(79, 127, 85, 0.55) !important;
+    border-radius: 0 !important;
+    resize: none;
+}
+
+.contact-us form .form-control:focus, .login-page .login-form .form-control:focus, #registerambassadormodal .form-control:focus, #registersponsormodal .form-control:focus
+,#donationmodal .form-control:focus, .update-ambassador-runs-form .form-control:focus, .pay-amount-form .form-control:focus{
+    box-shadow: none;
+}
+
+.facebook {
+    background: #458ccc;
+    height: 445px;
+    border-radius: 15px;
+}
+
+.bg-news-section {
+    margin-bottom: 20px;
+}
+/* End home page */
+
+/* footer page */
+footer {
+    background: #f8f6f7;
+    margin-top: 50px;
+    padding: 30px 90px
+}
+
+footer .d-flex.justify-content-between {
+    border-bottom: 3px solid #548259;
+    padding: 0 0 25px 0;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+footer .footer .fa-lg {
+    color: #4f7f55;
+}
+
+footer .footer .link {
+    font-size: 20px;
+    padding-left: 15px;
+    color: #212529;
+}
+
+footer .footer .privacy .link a{
+    color: #668f6b;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+footer .footer .line {
+    height: 45px;
+    border-left : 2px solid #b1b0b1;
+    width: 40px;
+}
+
+footer .copy-right {
+    text-align: center;
+    color: #668f6b;
+    font-size: 19px;
+}
+
+footer .copy-right .site-title {
+    border-right: 2px solid #668f6b;
+    padding-right: 15px;
+}
+/* End footer page */
+
+/* login page */
+.login-page .login-form, .login-page .register-section, .reset-password-page .section {
+    border-radius: 15px;
+    box-shadow: 0 0 5px 1px #e5e5e5;
+    padding: 40px;
+}
+
+.login-page .login-form .title, .login-page .register-section .title, .reset-password-page .title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #4f7f55;
+}
+
+.login-page .login-form .forgot-password {
+    color: #4f7f55;
+    font-weight: 500;
+    font-size: 16px;
+    border-bottom: 1.5px solid #4f7f55;
+}
+
+.login-page .login-form .login-btn, .login-page .register-section .ambassador-reg-btn, .login-page .register-section .sponsor-reg-btn {
+    color: white;
+    background: #4f7f55;
+    border: 1px solid #4f7f55;
+    border-radius: 34px;
+    padding: 6px 30px;
+    margin: auto;
+    align-items: center;
+}
+
+.login-page .register-section .sponsor-reg-btn {
+    padding: 6px 45px;
+}
+
+.login-page .login-form .login-btn {
+    margin-top: 35px !important;
+}
+
+.blog-header .log-btn:focus, .login-page .register-section .ambassador-reg-btn:focus, .login-page .register-section .sponsor-reg-btn:focus,
+.our-ambassadors-page .search-ambassador-input:focus, .our-ambassadors-page .sort-ambassador-dropdown:focus, .our-ambassadors-page .sort-btn:focus {
+    box-shadow: none;
+}
+/* End login page */
+
+/* Our ambassadors list pages */
+.our-ambassadors-page .container {
+    padding: 0 70px;
+}
+
+.sort-ambassador-dropdown-grid .dropdown-item:active{
+    color: white !important;
+    background: #4f7f55 !important;
+}
+
+.our-ambassadors-page .search-ambassador-input, .our-ambassadors-page .sort-ambassador-dropdown {
+    border-radius: 20px;
+    border: 1px solid #ced4da;
+    color: #84757d;
+}
+
+.our-ambassadors-page .dropdown-menu {
+    color: #84757d;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px #e5e5e5;
+}
+
+.our-ambassadors-page .dropdown-menu .dropdown-item {
+    color: #84757d;
+}
+
+.dropdown-toggle::after {
+    float: right;
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+.our-ambassadors-page .sort-btn {
+    color: white;
+    background: #4f7f55;
+    border: 1px solid #4f7f55;
+    border-radius: 34px;
+    font-weight: 600;
+    /*padding: 6px 45px;*/
+    margin: auto;
+    width: 100%;
+    align-items: center;
+}
+.ambassador-card .description .description-text{
+    min-height: 96px;
+}
+
+.our-ambassadors-page .ambassador-card.card {
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 0 5px 1px #e5e5e5;
+    padding: 30px 25px;
+    margin-top: 35px;
+}
+.our-ambassadors-page .ambassador-card.card .no-image{
+    width: 110px;
+    height: 110px;
+}
+.our-ambassadors-page .ambassador-card.card img {
+    /*width: 40%;*/
+
+    border-radius: 100px;
+}
+
+.our-ambassadors-page .ambassador-card.card .name {
+    color: #4f7f55;
+    font-weight: 600;
+    margin-top: 12px;
+}
+
+.our-ambassadors-page .ambassador-card.card .description {
+    border-bottom: 2px solid #ced4da;
+    margin-bottom: 13px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.our-ambassadors-page .ambassador-card.card p {
+    line-height: 19px;
+    margin-bottom: 5px;
+}
+
+.our-ambassadors-page .ambassador-card.card .total-runs {
+    color: #4f7f55;
+    font-weight: 600;
+}
+
+.our-ambassadors-page .ambassador-card.card .become-sponsor-btn {
+    color: #4f7f55;
+    border: 2px solid #4f7f55;
+    border-radius: 100px;
+    padding: 5px 24px;
+}
+
+.our-ambassadors-page .sort-ambassador-dropdown-grid {
+    padding-right: 0;
+}
+
+.our-ambassadors-page .sort-btn-grid {
+    padding-left: 6px;
+}
+/* End our ambassadors list pages */
+
+/* Meet initiators list */
+.meet-initiators-page .media {
+    border-radius: 15px;
+    box-shadow: 0 0 5px 1px #e5e5e5;
+    padding: 30px 40px;
+    margin-top: 25px;
+}
+
+.meet-initiators-page .media img {
+    border-radius: 100px;
+    border: 1px solid #dedbdb;
+}
+
+.meet-initiators-page .media .name {
+    font-size: 28px;
+    color: #4f7f55;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.meet-initiators-page .media .description {
+    line-height: 24px;
+    font-size: 19px;
+}
+/* End meet initiators list */
+
+
+/* Engage yourself */
+.engage-yourself-page .user-section .row .col-lg-4.col-md-6.col-sm-12.col-12{
+    margin-top: 25px;
+}
+.engage-yourself-page .contact-us{
+    margin-top: 40px;
+    box-shadow: none;
+    height: auto;
+}
+/* End engage yourself */
+
+/* List news page */
+.list-news-page .row .col-lg-4.col-md-6.col-sm-12.col-12, .single-news-page .related-news-section .col-lg-4.col-md-6.col-sm-12.col-12{
+    margin-top: 25px;
+}
+/* End List news */
+
+/*Single news page*/
+.single-news-page .single-news-detail{
+    padding: 30px 0;
+}
+.single-news-page .single-news-detail img {
+    border-radius: 15px;
+}
+.single-news-page .single-news-detail .title {
+    color: #4f7f55;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 15px 0 2px 0;
+}
+.single-news-page .single-news-detail .date{
+    font-size: 15px;
+    margin-bottom: 6px !important;
+    color: #9c9c9c;
+}
+/*End single news page*/
+
+/* About us page */
+.about-us-page .col-12:nth-child(1), .login-page .col-md-6.col-12{
+    margin-top: 25px;
+}
+.about-us-page .col-md-6.col-12{
+    margin-top: 25px;
+}
+.about-us-page .vision-and-goals, .about-us-page .how-we-help {
+    border-radius: 15px;
+    box-shadow: 0 0 5px 1px #e5e5e5;
+    padding: 20px 20px 35px 20px;
+    height: 100%;
+}
+.about-us-page .vision-and-goals .title, .about-us-page .how-we-help .title, .about-us-page .last-section .title{
+    font-size: 30px;
+    font-weight: 600;
+    color: #4f7f55;
+    border-bottom: 2px solid #4e4e4e;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+.about-us-page .vision-and-goals .description, .about-us-page .how-we-help .description, .about-us-page .last-section .description{
+    font-size: 19px;
+    margin-bottom: 0;
+    line-height: 23px;
+}
+.about-us-page .last-section .row{
+    border-radius: 15px;
+    box-shadow: 0 0 5px 1px #e5e5e5;
+    margin-top: 25px;
+}
+.about-us-page .last-section .col-md-6.col-12:nth-child(1){
+    margin-top: 0;
+    padding: 20px 20px 35px 20px;
+}
+.about-us-page .last-section .img-section{
+    margin-top: 0;
+    padding: 0;
+}
+.about-us-page .last-section .img-section img{
+    width: 100%;
+    border-radius: 0 15px 15px 0;
+    height: 100%;
+}
+/* End about us page */
+
+/*Register ambassador modal and register sponsor modal*/
+#registerambassadormodal .close:focus, #registersponsormodal .close:focus,#donationmodal .close:focus, #pay_amount_modal .close:focus {
+    outline: none;
+}
+#registerambassadormodal .register-privacy-link, #registersponsormodal .register-privacy-link,
+#registerambassadormodal .register-sales-link, #registersponsormodal .register-sales-link{
+    color: #4f7f55;
+    font-weight: 600;
+    border-bottom: 0.5px solid #4f7f55;
+}
+#registerambassadormodal .modal-content, #registersponsormodal .modal-content, #donationmodal .modal-content{
+    border-radius: 15px;
+    padding: 40px 20px;
+}
+#registerambassadormodal .modal-content .form-row .col-md-6.col-12, #registersponsormodal .modal-content .form-row .col-md-6.col-12, #donationmodal .modal-content .form-row .col-md-6.col-12{
+    margin: 10px 0;
+}
+#registerambassadormodal .title, #registersponsormodal .title, #donationmodal .title{
+    font-size: 24px;
+    font-weight: 600;
+    color: #4f7f55;
+    margin: auto;
+}
+#registerambassadormodal .description, #registersponsormodal .description{
+    margin: auto;
+    padding-top: 8px;
+}
+#registerambassadormodal .btn, #registersponsormodal .btn, #donationmodal .btn{
+    background: #4f7f55;
+    color: white;
+    border-radius: 60px;
+    padding: 5px 20px;
+}
+/*End register ambassador modal*/
+/* Contribute modal */
+#contributemodal .form-check-input{
+    margin-top: 7px;
+}
+
+/* End contribute modal */
+.boxer {
+    border-radius: 15px;
+    box-shadow: 0 0 5px 1px #e5e5e5;
+    padding: 40px;
+}
+.head {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #4f7f55;
+}
+.h3 {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #4f7f55;
+}
+.para {
+    font-size: 20px;
+}
+
+.head {
+    /* border-radius: 15px;
+    box-shadow: 0 0 5px 1px #e5e5e5; */
+    padding: 20px;
+    /* height: 445px; */
+    text-align: left;
+}
+
+.head .heading {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #4f7f55;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer !important;
+}
+.head form .form-control, .login-page .login-form .form-control, .reset-password-page .form-control {
+    border: none !important;
+    border-bottom: 1px solid #4f7f55 !important;
+    border-radius: 0 !important;
+    /*color: #ced4da;*/
+    resize: none;
+}
+
+.head form .form-control:focus, .login-page .login-form .form-control:focus, .reset-password-page .form-control {
+    box-shadow: none;
+}
+.contact-btn {
+    color: #4f7f55 !important;
+    border: 1px solid #4f7f55;
+    border-radius: 34px;
+    font-weight: 600;
+    width: 120px;
+    margin-bottom: 30px;
+}
+
+.icon {
+    color: #4f7f55;
+}
+span.link {
+    font-size: 20px;
+    padding-left: 15px;
+    color: #212529;
+}
+.br-right {
+    border-right: 1px solid #4f7f55;
+}
+.contact-detail {
+    padding: 10px 15px;
+}
+
+.contact-page {
+    margin-top: 49px;
+}
+
+body > div.wrapper > div > main > section.bg-news-section.bg-white > div > div > div > div.col-12.text-center.mt-4 {
+    margin-top: 0px !important;
+}
+
+.pay-btn {
+    color: #fff !important;
+    border: #fff !important;
+}
+.dataTables_length{
+    margin-top: 4px !important;
+}
+.dataTables_wrapper .dataTables_paginate {
+    padding-top: 0.75em !important;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button{
+    padding: 0 0.5em !important;
+}
+#pay_amount_modal label{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#user_registration_success_modal .select-ambassador-btn{
+    color: #28a745;
+    border: 2px solid #28a745;
+}
